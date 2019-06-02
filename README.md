@@ -5,7 +5,7 @@ Here we provide sample code to compute persistence images (PIs) using the propos
 
 ## Key Files  
 
-For sample test-set images in CIFAR10, both files first load weghts from a pre-trained Image PI-Net model; next, compute PIs using the Image PI-Net model and finally compare the generated PIs to ground-truth PIs obtained using conventional topological data analysis (TDA) tools. In addition, the "main.py" file saves the PI comparisons for each sample image in the "Examples folder".
+For sample test-set images in CIFAR10, both files first load weights from a pre-trained Image PI-Net model; next, compute PIs using the Image PI-Net model and finally compare the generated PIs to ground-truth PIs obtained using conventional topological data analysis (TDA) tools. In addition, the "main.py" file saves the PI comparisons for each sample image in the "Examples folder".
 
 - main.ipynb 
 
