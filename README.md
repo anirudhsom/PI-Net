@@ -13,7 +13,7 @@ For sample test-set images in CIFAR10, both files first load weights from a pre-
 
 ## Required Packages
 
-We ask the reviewers to run the code on a linux machine and have the following packages installed. We assume all necessary packages are already installed.
+Please install the following packages to before running the code.
 
 - numpy
 - scipy
