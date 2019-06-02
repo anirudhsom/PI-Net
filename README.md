@@ -1,4 +1,4 @@
-# PI-Net: A Deep Learning Approach to Extract Topological Persistence Images
+# PI-Net: A deep learning approach to extract topological persistence images
 
 Here we provide sample code to compute persistence images (PIs) using the proposed Image PI-Net model. We load weights from a pre-trained model trained on the CIFAR10 dataset.
 
