@@ -21,3 +21,7 @@ Please install the following packages to before running the code.
 - keras (with tensorflow backend)
 
 **Note:** If you have trouble running these codes, we illustrate the generated PIs in the "Examples" folder and for each image compare the generated PIs using the PI-Net model to the ground-truth PIs.
+
+### Link to paper: 
+
+[Paper](https://arxiv.org/pdf/1906.01769.pdf)  
