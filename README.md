@@ -1,27 +1,59 @@
-# PI-Net: A deep learning approach to extract topological persistence images
+# PI-Net: A Deep Learning Approach to Extract Topological Persistence Images
 
-Here we provide sample code to compute persistence images (PIs) using the proposed Image PI-Net model. We load weights from a pre-trained model trained on the CIFAR10 dataset.
+[Paper](https://arxiv.org/pdf/1906.01769.pdf)  
+
+This repository contains:
+
+- Sample code to compute persistence images (PIs) using the proposed Image PI-Net and Signal PI-Net models.
+  
+- The provided pretrained Image PI-Net model was trained using the [CIFAR10](https://www.cs.toronto.edu/~kriz/cifar.html) dataset, and the provided pretrained Signal PI-Net model was trained using the [USC-HAD](https://sipi.usc.edu/had/) dataset. [Scikit-TDA](https://scikit-tda.org/) was used to generate ground-truth PIs.
+
+Note, performance of the provided Signal PI-Net model differs from that described in the paper, since the original model was pretrained using the GENEactiv dataset which is not publicly released.  
 
 
-## Key Files  
 
-For sample test-set images in CIFAR10, both files first load weights from a pre-trained Image PI-Net model; next, compute PIs using the Image PI-Net model and finally compare the generated PIs to ground-truth PIs obtained using conventional topological data analysis (TDA) tools. In addition, the "main.py" file saves the PI comparisons for each sample image in the "Examples folder". We use [Scikit-TDA](https://scikit-tda.org/) to generate ground-truth PIs.
+## [Image PI-Net](https://github.com/anirudhsom/PI-Net/tree/master/Image%20PI-Net) 
 
-- main.ipynb 
+For sample test-set images in CIFAR10, both "main_image_pinet.py" and "main_image_pinet.ipynb" do the following: 
 
-- main.py
+- Load weights from a pretrained Image PI-Net model;
+
+- Compute PIs using the Image PI-Net model;
+
+- Compare the generated PIs to ground-truth PIs obtained using conventional topological data analysis (TDA) tools.
+
+Additionally, the "main.py" file saves the PI comparisons for each sample image in the "Examples folder".
+
+
+
+## [Signal PI-Net](https://github.com/anirudhsom/PI-Net/tree/master/Signal%20PI-Net) 
+
+Here, we provide pretrained model weights and sample code to train the Signal PI-Net model using the USC-HAD dataset.
+
+To extract ground-truth persistence images for your time-series data, please refer to the following repository: [Sublevel-Set-TDA](https://github.com/itsmeafra/Sublevel-Set-TDA). 
+
+
 
 ## Required Packages
 
-Please install the following packages to before running the code.
+Python 3.8.5, along with the following packages were used to train the models.
 
-- numpy
-- scipy
+- tensorflow == 2.10.0
+- keras == 2.10.0
 - matplotlib
-- keras (with tensorflow backend)
+- numpy
+- scikit-learn
+- scikit-tda
 
-**Note:** If you have trouble running these codes, we illustrate the generated PIs in the "Examples" folder and for each image compare the generated PIs using the PI-Net model to the ground-truth PIs.
 
-### Link to paper: 
+## Citation
 
-[Paper](https://arxiv.org/pdf/1906.01769.pdf)  
+```
+@inproceedings{som2020pi,
+  title={PI-Net: A Deep Learning Approach to Extract Topological Persistence Images},
+  author={Som, Anirudh and Choi, Hongjun and Ramamurthy, Karthikeyan Natesan and Buman, Matthew P and Turaga, Pavan},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition workshops},
+  pages={834--835},
+  year={2020}
+}
+```
