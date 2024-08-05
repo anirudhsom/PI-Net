@@ -18,7 +18,7 @@ PIs = temp['PIs']
 
 ## Load model and weights
 print("\n Loading model and weights ...")
-model = PINet_CIFAR10()
+model = Image_PINet()
 model.load_weights('PI-Net_CIFAR10.h5')
 
 ## Generate PIs using PI-Net
