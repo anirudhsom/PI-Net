@@ -1,7 +1,6 @@
 import numpy as np
 import scipy.io as sio
 import matplotlib.pyplot as plt
-import tensorflow
 from tensorflow.keras import models, layers, losses, optimizers, utils
 from tensorflow.keras import backend as K
 
