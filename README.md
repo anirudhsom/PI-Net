@@ -34,7 +34,7 @@ To extract ground-truth persistence images for your time-series data, please ref
 
 
 
-## [Required Packages](https://github.com/anirudhsom/PI-Net/tree/master/Signal%20PI-Net) 
+## [Required Packages](https://github.com/anirudhsom/PI-Net/blob/master/requirements.txt) 
 
 Python 3.8.5 was used to create an environment with the following packages.
 
