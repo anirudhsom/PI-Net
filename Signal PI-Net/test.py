@@ -21,7 +21,7 @@ opt1 = optimizers.Adam(learning_rate=1e-3, beta_1=0.99, epsilon=1e-1)
 
 model = Signal_PINet()
 model.compile(optimizer=opt1, loss='mean_squared_error')
-model.load_weights(f'Signal2PI_model/Seed-100/Model_1000_epochs.h5')
+model.load_weights(f'PI-Net_USCHAD_model.h5')
 
 print(f"Train MSE: {model.evaluate(x_train,y_train)}")
 print(f"Test MSE: {model.evaluate(x_test,y_test)}")
