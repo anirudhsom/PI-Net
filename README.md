@@ -40,10 +40,11 @@ Python 3.8.5 was used to create an environment with the following packages.
 
 - tensorflow == 2.10.0
 - keras == 2.10.0
-- matplotlib
-- numpy
-- scikit-learn
-- scikit-tda
+- numpy == 1.22.3
+- scipy == 1.9.1
+- matplotlib == 3.5.2
+- scikit-learn == 1.1.1
+- scikit-tda == 0.4.2
 
 
 ## Citation
